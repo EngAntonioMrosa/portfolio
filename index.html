@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcos Rosa — AI Automation & Landing Page Engineer</title>
+<meta name="description" content="Landing pages, Figma to code, workflow automation and chatbots. Fixed price, delivered fast.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: { colors: { ink:'#08090b', lime:'#c8f751' }, fontFamily:{ sans:['Inter','system-ui','sans-serif'] } } }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-ink text-neutral-300 font-sans antialiased">
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 backdrop-blur bg-ink/80 border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#top" class="font-black text-white tracking-tight">MR<span class="text-lime">.</span></a>
+    <nav class="hidden md:flex gap-8 text-sm text-neutral-400">
+      <a href="#services" class="hover:text-lime transition">Services</a>
+      <a href="#how" class="hover:text-lime transition">Process</a>
+      <a href="#stack" class="hover:text-lime transition">Stack</a>
+    </nav>
+    <a href="#contact" class="text-sm font-semibold px-4 py-2 rounded-full bg-lime text-ink hover:brightness-110 transition">Hire me</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative overflow-hidden">
+  <div class="absolute inset-0 -z-10 opacity-30" style="background:radial-gradient(60% 50% at 70% 0%, #c8f75122, transparent 70%)"></div>
+  <div class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+    <p class="text-lime text-sm font-semibold tracking-widest uppercase mb-6">Available now · Fixed price · Worldwide</p>
+    <h1 class="text-white font-black tracking-tight text-5xl md:text-7xl leading-[1.05] max-w-4xl">
+      I ship the working thing.<br>
+      <span class="text-neutral-600">Not a mockup.</span>
+    </h1>
+    <p class="mt-8 text-lg text-neutral-400 max-w-2xl">
+      Landing pages, Figma-to-code, workflow automation and chatbots — built, tested and delivered.
+      No discovery calls, no retainer games. You get a working link.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="#services" class="px-6 py-3 rounded-full bg-lime text-ink font-bold hover:brightness-110 transition">See services & prices</a>
+      <a href="#contact" class="px-6 py-3 rounded-full border border-white/15 text-white font-semibold hover:border-lime hover:text-lime transition">Get a quote</a>
+    </div>
+    <div class="mt-16 grid grid-cols-3 gap-8 border-t border-white/10 pt-8 max-w-lg">
+      <div><p class="text-white text-3xl font-black">&lt;90<span class="text-lime">min</span></p><p class="text-xs text-neutral-500 mt-1">typical delivery</p></div>
+      <div><p class="text-white text-3xl font-black">100<span class="text-lime">%</span></p><p class="text-xs text-neutral-500 mt-1">tested before delivery</p></div>
+      <div><p class="text-white text-3xl font-black">0<span class="text-lime">%</span></p><p class="text-xs text-neutral-500 mt-1">scope creep</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="border-t border-white/10 py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-white text-3xl md:text-4xl font-black tracking-tight">Services</h2>
+    <p class="text-neutral-500 mt-3 max-w-xl">Every price is fixed and final. If the scope fits these cards, we start today.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-14">
+
+      <article class="group rounded-2xl border border-white/10 hover:border-lime/40 bg-white/[0.02] p-8 transition">
+        <div class="flex justify-between items-start gap-4">
+          <h3 class="text-white text-xl font-bold">Landing Page</h3>
+          <span class="text-lime font-mono text-sm shrink-0">from $95</span>
+        </div>
+        <p class="mt-3 text-sm leading-relaxed">One or two screens. Hero, benefits, proof, CTA, working form wired to your inbox or CRM. Responsive, fast, accessible.</p>
+        <p class="mt-5 text-xs font-mono text-neutral-600">30–60 min</p>
+      </article>
+
+      <article class="group rounded-2xl border border-white/10 hover:border-lime/40 bg-white/[0.02] p-8 transition">
+        <div class="flex justify-between items-start gap-4">
+          <h3 class="text-white text-xl font-bold">Figma → Production Code</h3>
+          <span class="text-lime font-mono text-sm shrink-0">from $150</span>
+        </div>
+        <p class="mt-3 text-sm leading-relaxed">Your design turned into clean, semantic HTML and Tailwind. Pixel-faithful on desktop and mobile, and actually maintainable.</p>
+        <p class="mt-5 text-xs font-mono text-neutral-600">60–90 min</p>
+      </article>
+
+      <article class="group rounded-2xl border border-white/10 hover:border-lime/40 bg-white/[0.02] p-8 transition">
+        <div class="flex justify-between items-start gap-4">
+          <h3 class="text-white text-xl font-bold">Workflow Automation</h3>
+          <span class="text-lime font-mono text-sm shrink-0">from $180</span>
+        </div>
+        <p class="mt-3 text-sm leading-relaxed">n8n / Make pipelines: form to CRM, Sheets, email, Telegram, webhook. Connect the tools you already pay for and stop copy-pasting.</p>
+        <p class="mt-5 text-xs font-mono text-neutral-600">60–90 min</p>
+      </article>
+
+      <article class="group rounded-2xl border border-white/10 hover:border-lime/40 bg-white/[0.02] p-8 transition">
+        <div class="flex justify-between items-start gap-4">
+          <h3 class="text-white text-xl font-bold">Telegram / WhatsApp Bot</h3>
+          <span class="text-lime font-mono text-sm shrink-0">from $140</span>
+        </div>
+        <p class="mt-3 text-sm leading-relaxed">Command menu, lead capture, auto-replies, menu flow. Deployed and tested on the real platform before handover.</p>
+        <p class="mt-5 text-xs font-mono text-neutral-600">60–90 min</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="how" class="border-t border-white/10 py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-white text-3xl md:text-4xl font-black tracking-tight">How it works</h2>
+    <div class="grid md:grid-cols-3 gap-10 mt-14">
+      <div><p class="text-lime font-mono text-sm">01</p><h3 class="text-white font-bold mt-3">You send the brief</h3><p class="mt-2 text-sm text-neutral-400">Link, screenshot, or one paragraph. If it's ambiguous I say no rather than guess.</p></div>
+      <div><p class="text-lime font-mono text-sm">02</p><h3 class="text-white font-bold mt-3">I build and test</h3><p class="mt-2 text-sm text-neutral-400">You get the working version running, not a staging mockup. Broken things don't get sent.</p></div>
+      <div><p class="text-lime font-mono text-sm">03</p><h3 class="text-white font-bold mt-3">You review once</h3><p class="mt-2 text-sm text-neutral-400">One round of adjustments is included. After that we're done — scope stays fixed.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section id="stack" class="border-t border-white/10 py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-white text-3xl md:text-4xl font-black tracking-tight">Stack</h2>
+    <div class="flex flex-wrap gap-3 mt-10">
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">HTML</span>
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">Tailwind</span>
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">JavaScript</span>
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">Python</span>
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">n8n</span>
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">Make</span>
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">Node.js</span>
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">Postgres</span>
+      <span class="px-4 py-2 rounded-full border border-white/10 text-sm font-mono text-neutral-400">GitHub Actions</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="border-t border-white/10 py-24">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-white text-3xl md:text-5xl font-black tracking-tight">Got something that needs shipping?</h2>
+    <p class="text-neutral-400 mt-5 max-w-lg mx-auto">Send the brief. You get a fixed price and an honest yes or no — usually within the hour.</p>
+    <div class="mt-10 flex flex-wrap gap-4 justify-center">
+      <a href="mailto:contact@example.com" class="px-7 py-3.5 rounded-full bg-lime text-ink font-bold hover:brightness-110 transition">Start a project</a>
+      <a href="https://wa.me/5500000000000" class="px-7 py-3.5 rounded-full border border-white/15 text-white font-semibold hover:border-lime hover:text-lime transition">WhatsApp</a>
+    </div>
+    <p class="mt-12 text-xs text-neutral-600 font-mono">© <span id="y"></span> Marcos Rosa</p>
+  </div>
+</section>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
